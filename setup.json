@@ -1,0 +1,41 @@
+{
+  "constant":{
+    "meta":{
+      "from":"/data/meta.t2ml",
+      "to":"head"
+    },
+    "header":{
+      "from":"/data/header.t2ml",
+      "to":"header"
+    },
+    "footer":{
+      "from": "/data/footer.t2ml",
+      "to": "footer"
+    }
+  },
+  "unique":{
+    "pages":{
+      "directory":"data",
+      "to": "article",
+      "common": {
+        "/data": {
+          "aside": "/aside.t2ml"
+        }
+      }
+    }
+  },
+  "css":{
+    "constant":["/style.css"],
+    "common":{
+      "pages":["/data.css"]
+    }
+  },
+  "script":{
+    "constant": ["/main.js"],
+    "common":{
+      "/pages":["/common.js","/common2.js"]
+    }
+  },
+  "t2ml":"/t2ml.js"
+  
+}
